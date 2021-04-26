@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "938930708951",
+    "project_id": "flash-chat-d1b39",
+    "storage_bucket": "flash-chat-d1b39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938930708951:android:d42eec93b6e1e8f606ab92",
+        "android_client_info": {
+          "package_name": "co.MoReda.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938930708951-6uo26d0t5r0tkuu3jv7rb4ub7qn5q9le.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvZTxlzxKOyKUu2mXAJg9TceAdLGyBccQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938930708951-6uo26d0t5r0tkuu3jv7rb4ub7qn5q9le.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

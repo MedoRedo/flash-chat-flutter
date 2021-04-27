@@ -25,6 +25,13 @@ class _ChatScreenState extends State<ChatScreen> {
     getCurrentUser();
   }
 
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    messageTextController.dispose();
+    super.dispose();
+  }
+
   void getCurrentUser() {
     try {
       loggedInUser = _auth.currentUser;
@@ -55,8 +62,8 @@ class _ChatScreenState extends State<ChatScreen> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             MessageStream(),
-            Container(
-              decoration: kMessageContainerDecoration,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
@@ -70,19 +77,23 @@ class _ChatScreenState extends State<ChatScreen> {
                       decoration: kMessageTextFieldDecoration,
                     ),
                   ),
-                  FloatingActionButton(
-                    onPressed: () {
-                      if (messageText != null) {
-                        messageTextController.clear();
-                        _fireStore.collection('messages').add({
-                          'text': messageText,
-                          'sender': loggedInUser.email,
-                          'timestamp': FieldValue.serverTimestamp(),
-                        });
-                        messageText = null;
-                      }
-                    },
-                    child: Icon(Icons.send),
+                  SizedBox(
+                    width: 45.0,
+                    height: 45.0,
+                    child: FloatingActionButton(
+                      onPressed: () {
+                        if (messageText != null) {
+                          messageTextController.clear();
+                          _fireStore.collection('messages').add({
+                            'text': messageText,
+                            'sender': loggedInUser.email,
+                            'timestamp': FieldValue.serverTimestamp(),
+                          });
+                          messageText = null;
+                        }
+                      },
+                      child: Icon(Icons.send),
+                    ),
                   ),
                 ],
               ),

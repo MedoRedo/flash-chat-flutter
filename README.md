@@ -1,7 +1,7 @@
-![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
-
-
 # Flash Chat ⚡️
+
+![alt text](https://drive.google.com/file/d/1JeVOu9AxW4spxsm0_Y7PaBp1A3VGe0Mc/view?usp=sharing)
+![alt text](https://drive.google.com/file/d/1J_lKE-6skmGC4xbEfuFwgHuCZ31zVQ5F/view?usp=sharing)
 
 ## Our Goal
 
@@ -12,7 +12,6 @@ The objective of this tutorial is to learn how to incorporate Firebase into our 
 
 We’re going to build a modern messaging app where users can sign up and log in to chat.
 
-![Finished App](https://github.com/londonappbrewery/Images/blob/master/flash_chat_flutter_demo.gif)
 
 ## What you will learn
 
@@ -29,4 +28,3 @@ We’re going to build a modern messaging app where users can sign up and log in
 
 >This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
 
-![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)

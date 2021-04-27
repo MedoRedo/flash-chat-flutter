@@ -9,8 +9,10 @@ The objective of this tutorial is to learn how to incorporate Firebase into our 
 
 We’re going to build a modern messaging app where users can sign up and log in to chat.
 
-<img src="images/login_screen.jpg" alt="Login Screen" width="350">
-<img src="images/chat_screen.jpg" alt="Chat Screen" width="350">
+<p float="left">
+  <img src="images/login_screen.jpg" alt="Login Screen" width="350">
+  <img src="images/chat_screen.jpg" alt="Chat Screen" width="350">
+</p>
 
 
 ## What you will learn

@@ -72,11 +72,15 @@ class _ChatScreenState extends State<ChatScreen> {
                   ),
                   FloatingActionButton(
                     onPressed: () {
-                      messageTextController.clear();
-                      _fireStore.collection('messages').add({
-                        'text': messageText,
-                        'sender': loggedInUser.email,
-                      });
+                      if (messageText != null) {
+                        messageTextController.clear();
+                        _fireStore.collection('messages').add({
+                          'text': messageText,
+                          'sender': loggedInUser.email,
+                          'timestamp': FieldValue.serverTimestamp(),
+                        });
+                        messageText = null;
+                      }
                     },
                     child: Icon(Icons.send),
                   ),
@@ -94,7 +98,8 @@ class MessageStream extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<QuerySnapshot>(
-      stream: _fireStore.collection('messages').snapshots(),
+      stream:
+          _fireStore.collection('messages').orderBy('timestamp').snapshots(),
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
           return Center(child: CircularProgressIndicator());

@@ -1,7 +1,7 @@
 # Flash Chat ⚡️
 
-![alt text](https://drive.google.com/file/d/1JeVOu9AxW4spxsm0_Y7PaBp1A3VGe0Mc/view?usp=sharing)
-![alt text](https://drive.google.com/file/d/1J_lKE-6skmGC4xbEfuFwgHuCZ31zVQ5F/view?usp=sharing)
+![Login Screen](images/login_screen.jpg)
+![Chat Screen](images/chat_screen.jpg)
 
 ## Our Goal
 
